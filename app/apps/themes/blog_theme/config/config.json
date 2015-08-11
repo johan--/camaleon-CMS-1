@@ -1,0 +1,14 @@
+{
+  "name" : "Blog Theme",
+  "description" : "",
+  "thumb" : "assets/images/image.png",
+  "helpers": [
+    "Themes::BlogTheme::MainHelper"
+  ],
+  "hooks": {
+    "on_active": ["blog_theme_on_install_theme"],
+    "on_inactive": ["blog_theme_on_uninstall_theme"],
+    "on_theme_settings": ["blog_theme_settings"]
+    //here all your hooks
+  }
+}

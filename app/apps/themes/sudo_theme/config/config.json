@@ -1,0 +1,14 @@
+{
+  "name" : "Sudo Theme",
+  "description" : "qweqwe",
+  "thumb" : "assets/images/image.png",
+  "helpers": [
+    "Themes::SudoTheme::MainHelper"
+  ],
+  "hooks": {
+    "on_active": ["sudo_theme_on_install_theme"],
+    "on_inactive": ["sudo_theme_on_uninstall_theme"],
+    "on_theme_settings": ["sudo_theme_settings"]
+    //here all your hooks
+  }
+}
